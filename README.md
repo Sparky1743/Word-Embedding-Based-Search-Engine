@@ -59,12 +59,30 @@ We used the following metrics for a thorough evaluation:
 
 ## 📈 Results Summary
 
+The following table presents performance metrics averaged across a diverse set of 8 test queries. Each method was evaluated using key retrieval metrics such as **MRR**, **Precision@k**, and **NDCG@k**, as well as runtime and speedup.
+
 | Method   | Time (s)         | Speedup (x) | MRR            | P@1  | NDCG@1 | P@3  | NDCG@3 | P@5  | NDCG@5 | P@10 | NDCG@10 |
 |----------|------------------|-------------|----------------|------|--------|------|--------|------|--------|------|----------|
 | Flat     | 0.0002 ± 0.0000  | 6598.3      | 0.917 ± 0.220  | 0.875| 0.875  | 0.792| 0.809  | 0.825| 0.827  | 0.837| 0.835    |
 | HNSW     | 0.0001 ± 0.0000  | 19289.1     | 0.854 ± 0.256  | 0.75 | 0.75   | 0.792| 0.787  | 0.8  | 0.793  | 0.787| 0.786    |
 | MinHash  | 1.2147 ± 0.0344  | 1.0         | 0.900 ± 0.265  | 0.875| 0.875  | 0.542| 0.610  | 0.525| 0.579  | 0.613| 0.621    |
 | SimHash  | 1.2147 ± 0.0344  | 1.0         | 0.635 ± 0.365  | 0.5  | 0.5    | 0.333| 0.360  | 0.425| 0.419  | 0.388| 0.393    |
+
+### 🧪 Test Queries Used
+
+The evaluation was performed on the following 8 queries:
+
+```python
+TEST_QUERIES = {
+    "Impact of oil prices on global economy": "Business",
+    "Latest advancements in space exploration": "Sci/Tech",
+    "NBA basketball finals highlights": "Sports",
+    "Political tensions in the Middle East": "World",
+    "New treatments for cancer discovered": "Sci/Tech",
+    "Results of recent soccer world cup": "Sports", 
+    "Startup company funding rounds": "Business",
+    "International summit on climate change": "World"
+}
 
 ---
 
