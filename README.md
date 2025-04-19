@@ -49,7 +49,6 @@ All documents and queries are embedded using the **`all-MiniLM-L6-v2`** model fr
 We used the following metrics for a thorough evaluation:
 
 - **Precision@K (P@K)**: Proportion of relevant documents in top-K results.
-- **Recall@K (R@K)**: Proportion of all relevant documents retrieved in top-K.
 - **MRR (Mean Reciprocal Rank)**: Average reciprocal rank of the first relevant document.
 - **NDCG@K**: Normalized Discounted Cumulative Gain emphasizing the order of relevance.
 - **Time (s)**: Average retrieval time per query.
