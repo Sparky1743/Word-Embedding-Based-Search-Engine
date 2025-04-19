@@ -83,7 +83,7 @@ TEST_QUERIES = {
     "Startup company funding rounds": "Business",
     "International summit on climate change": "World"
 }
-
+```
 ---
 
 ## 💡 Key Insights
