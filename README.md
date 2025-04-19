@@ -15,7 +15,7 @@ The goal of this project is to build a semantic search engine that leverages wor
 
 - Develop a semantic search engine using word embeddings.
 - Implement and compare retrieval techniques: Flat (brute-force), HNSW (ANN), MinHash, and SimHash.
-- Evaluate performance using information retrieval metrics like Precision@K, Recall@K, MRR, and NDCG.
+- Evaluate performance using information retrieval metrics like Precision@K, MRR, and NDCG.
 - Optimize for speed and scalability across large datasets.
 - Analyze trade-offs between retrieval quality and performance.
 
